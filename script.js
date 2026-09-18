@@ -6,7 +6,7 @@ const title = document.getElementById("title");
 // Hämta knapp elementet
 const button = document.getElementById("myBtn");
 
-// Skapa funktionen som gör knappen klickbar och en if sats som ändrar texten
+// Skapa funktionen som gör knappen klickbar och en if sats som ändrar texten via knappen
 function clickButton() {
     if (title.textContent === "Hello World.") {
     
