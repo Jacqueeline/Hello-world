@@ -1,10 +1,20 @@
+
+
+// Hämta text elementet
+const title = document.getElementById("title");
+
 // Hämta knapp elementet
 const button = document.getElementById("myBtn");
 
-// Skapa funktionen som gör kanppen klickbar
+// Skapa funktionen som gör knappen klickbar och en if sats som ändrar texten
 function clickButton() {
-    document.getElementById("title").textContent =("Goodbye World.");
-}
+    if (title.textContent === "Hello World.") {
+    
+        title.textContent = "Goodbye World.";
+    } else {
+        title.textContent = "Hello World."; 
+    }
+ }
 
 // Lägg till en eventListener(metod) som lyssnar på klickhändelsen(elementet)
 button.addEventListener("click", clickButton);
